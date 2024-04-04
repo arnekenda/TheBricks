@@ -1,0 +1,8 @@
+*{
+    background-color: beige;
+}
+#canvas{
+    margin-left: 40%;
+    margin-top:15%;
+    border: 3px solid black;
+}
