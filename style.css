@@ -1,8 +1,11 @@
 *{
     background-color: beige;
 }
+#naslov{
+    text-align: center;
+}
 #canvas{
-    margin-left: 40%;
-    margin-top:15%;
+    margin-left:29%;
+   
     border: 3px solid black;
 }
