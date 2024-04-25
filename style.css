@@ -1,11 +1,107 @@
 *{
-    background-color: beige;
+	margin:0;
+	padding:0;	
 }
-#naslov{
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+#center{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: linear-gradient(160deg, #403194 10%, #403194 110%);
+	background-repeat:no-repeat;
+    border-radius: 5px;
+	border:rgb(82, 63, 0) 5px solid;
+    box-shadow: rgb(187, 166, 83) 0 0 10px 5px;
+    z-index: 1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+	
+    /*background: linear-gradient(160deg, rgb(0, 42, 125) 10%, rgb(21, 119, 152) 80%);*/
+    background-image: url(https://www.imaginefactory.com/wp-content/uploads/2017/04/SPACES_BG-2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+p{  
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 135px;
+    font-family: 'bricks';
+    color: rgb(0, 0, 0);
 }
-#canvas{
-    margin-left:29%;
-   
-    border: 3px solid black;
+
+
+.tocke {
+	padding-left: 40%;
+	float: left;
+	font-family: 'bricks';
+	font-size: 2em;
+    color: rgb(0, 0, 0);
 }
+
+.cas {
+	padding-right: 40%;
+	float: right;
+	font-family: 'bricks';
+	font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.centriraj {
+    width: 800px;
+    height: 30px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+mark {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+  }
+
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0.8em 1em 0;
+    color: inherit;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    font-family: "bricks";
+}
+
+.swal2-html-container {
+    z-index: 1;
+    justify-content: center;
+    margin: 1em 1.6em 0.3em;
+    padding: 0;
+    overflow: auto;
+    color: inherit;
+    font-size: 1.7em;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
