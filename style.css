@@ -3,7 +3,7 @@
 	padding:0;	
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
 
 #center{
 	position: fixed;
@@ -40,7 +40,7 @@ p{
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 135px;
-    font-family: 'bricks';
+    font-family: "Poetsen One", sans-serif;
     color: rgb(0, 0, 0);
 }
 
@@ -48,17 +48,20 @@ p{
 .tocke {
 	padding-left: 40%;
 	float: left;
-	font-family: 'bricks';
+    font-family: "Poetsen One", sans-serif;
 	font-size: 2em;
     color: rgb(0, 0, 0);
+    background-color:#8978e6;
+    filter: drop-shadow(0.2rem 0.2rem 10px #8585ec);
 }
 
 .cas {
 	padding-right: 40%;
 	float: right;
-	font-family: 'bricks';
+	font-family: "Poetsen One", sans-serif;
 	font-size: 2em;
     color: rgb(0, 0, 0);
+    
 }
 
 .centriraj {
@@ -68,6 +71,7 @@ p{
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
   }
 
 mark {
@@ -86,7 +90,7 @@ mark {
     text-align: center;
     text-transform: none;
     word-wrap: break-word;
-    font-family: "bricks";
+    font-family: "Poetsen One", sans-serif;
 }
 
 .swal2-html-container {
@@ -102,6 +106,6 @@ mark {
     text-align: center;
     word-wrap: break-word;
     word-break: break-word;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Poetsen One", sans-serif;
 }
 

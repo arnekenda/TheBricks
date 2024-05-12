@@ -53,8 +53,8 @@
                 HEIGHT = $("#canvas").height();
                 //welcome sweet alert
                 Swal.fire({
-                    title: 'WELCOME TO THE BRICKS!',
-                    html: 'Win by breaking all the bricks using your mous or keyboard. <br>  Choose the speed of the ball:',
+                    title: 'WELCOME!',
+                    html: 'Win by breaking all the bricks using your mouse or keyboard. <br>  Choose the speed of the ball:',
                     input: 'select',
                     inputOptions: {
                         slow: 'Slow',
@@ -66,7 +66,7 @@
                     showCancelButton: false,
                     showConfirmButton: true,
                     confirmButtonText: 'Start',
-                    confirmButtonColor: '#fefe00',
+                    confirmButtonColor: '#8585ec',
                     allowOutsideClick: false,
                     backdrop: `rgba(0, 0, 0, 0.6)`
                 }).then((result) => {
@@ -250,11 +250,11 @@
                     }
                 }
 
-                rowheight = BRICKHEIGHT + PADDING / 2; //Smo zadeli opeko?
+                rowheight = BRICKHEIGHT + PADDING / 2; 
                 colwidth = BRICKWIDTH + PADDING / 2;
                 row = Math.floor(y / rowheight);
                 col = Math.floor(x / colwidth);
-                //Če smo zadeli opeko, vrni povratno kroglo in označi v tabeli, da opeke ni več
+                
                 if (y < NROWS * rowheight && row >= 0 && col >= 0 && bricks[row][col] == 1) {
                     dy = -dy; bricks[row][col] = 0;
                     var points = brickPoints[row]; // tocke za vrstico
@@ -292,7 +292,7 @@
                             }
                         });
                         dx = 0;
-                        dy = 0; //mogu sem dat to pred clearInterval ker drugace se sweetalert ne pojavi!
+                        dy = 0; 
                         clearInterval(intervalId);
                     }
 
@@ -302,7 +302,7 @@
                 if (tocke >= 75) {
                     start = false; // ustavi igro
                     clearInterval(intervalId);
-                    // Show sweet alert
+                    
                     Swal.fire({
                         title: 'Congratulations!',
                         html: `You scored 75 points!<br>Your ime: ${izpisTimer}`,
@@ -313,7 +313,7 @@
                         if (result.isConfirmed) {
                             dx = 0;
                             dy = 0;
-                            location.reload(); // Reload the page to restart the game
+                            location.reload(); 
                         }
                     });
 
@@ -341,7 +341,9 @@
         <p class="tocke">POINTS: <mark id="tocke">0</mark></p>
         <p class="cas">TIME: <mark id="cas">00:00</mark></p>
     </div>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+    </style>
 
 </body>
 
